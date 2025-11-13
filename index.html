@@ -193,6 +193,291 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Projects Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-800 mb-8 text-center">Projects & Software</h2>
+
+            <div class="flex flex-col gap-8">
+
+                <!-- === PROJECT 1: UII — FULL DETAILED DESCRIPTION === -->
+                <div class="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold text-blue-700 mb-3">UII — Experimental Trial Management System</h3>
+
+                        <p class="text-gray-600 mb-4">
+                            A real-time platform for managing and monitoring neurophysiological experiments during prolonged monotonous tasks and high physical load conditions.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Solara</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">MNE</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">LSL</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">FastAPI</span>
+                        </div>
+
+                        <details class="group">
+                            <summary class="flex justify-between items-center cursor-pointer list-none text-blue-600 hover:text-blue-800 font-medium text-sm mb-3">
+                                <span class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                    More about the project
+                                </span>
+                            </summary>
+
+                            <div class="mt-4 pt-4 border-t border-gray-200 text-gray-700 space-y-4 text-sm leading-relaxed">
+                                <p>
+                                    UII is a comprehensive software system designed to control and monitor human performance in two critical operational scenarios involving neurophysiological data acquisition and real-time analysis.
+                                </p>
+
+                                <div class="space-y-4">
+                                    <div>
+                                        <p class="font-medium text-gray-800 mb-1">Scenario 1: Prolonged Monotonous Tasks</p>
+                                        <ul class="list-disc list-inside space-y-1 ml-4">
+                                            <li>Two distinct user roles: Specialist Workstation and Commander Dashboard</li>
+                                            <li>Commander connects custom EEG, ECG, and GSR sensors via LSL streams</li>
+                                            <li>FastAPI server on the specialist’s PC executes scenario control commands</li>
+                                            <li>Specialist receives real-time forecast of professional reliability based on physiological signals</li>
+                                            <li>Both interfaces support synchronized data visualization and interaction</li>
+                                            <li>Specialist can view own physiological signals and reliability score</li>
+                                            <li>Commander can trigger scenario changes, send notifications, and manage session flow</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <p class="font-medium text-gray-800 mb-1">Scenario 2: High Physical Load Conditions</p>
+                                        <ul class="list-disc list-inside space-y-1 ml-4">
+                                            <li>Single interface: Commander Control Point</li>
+                                            <li>Data from specialized wearable ECG sensors with up to 1 km wireless range</li>
+                                            <li>Transmitted data is automatically packaged into LSL streams</li>
+                                            <li>Real-time visualization of ECG and reliability prediction on commander's screen</li>
+                                            <li>No direct feedback to the subject — monitoring is passive</li>
+                                            <li>Focus on long-range, robust data transmission under physical stress</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    The system includes a digital profile creation form for new specialists, allowing storage of personal data, baseline physiological parameters, and experiment history. Additional features include an admin panel for cache management, automatic stream reconnection, HTML/PDF report generation with embedded plots, and a fully responsive, localized user interface with onboarding tooltips and adaptive layout for large screens.
+                                </p>
+
+                                <p>
+                                    The platform uses Solara for reactive web UI, MNE for EEG processing, and LSL for real-time data streaming. All components are designed for high-reliability deployment in laboratory and field conditions.
+                                </p>
+
+                                <!-- Screenshots -->
+                                <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+                                    <a href="https://via.placeholder.com/800x500.png?text=UII+Commander+Dashboard" target="_blank">
+                                        <img src="https://via.placeholder.com/800x500.png?text=UII+Commander+Dashboard" alt="Commander Dashboard" class="rounded-lg border hover:border-blue-400 transition-all w-full h-auto">
+                                    </a>
+                                    <a href="https://via.placeholder.com/800x500.png?text=UII+Specialist+Interface" target="_blank">
+                                        <img src="https://via.placeholder.com/800x500.png?text=UII+Specialist+Interface" alt="Specialist Interface" class="rounded-lg border hover:border-blue-400 transition-all w-full h-auto">
+                                    </a>
+                                </div> -->
+
+                                <!-- Links -->
+                                <div class="flex flex-wrap gap-3 text-sm mt-4">
+                                    <a href="https://github.com/neuro-sfedu/uii" target="_blank" class="text-blue-600 hover:underline flex items-center">
+                                        <i class="fab fa-github mr-1"></i> GitHub (neuro-sfedu/uii)
+                                    </a>
+                                    <a href="https://github.com/neuro-sfedu/uii/issues" target="_blank" class="text-orange-600 hover:underline flex items-center">
+                                        <i class="fas fa-exclamation-triangle mr-1"></i> Open Issues
+                                    </a>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- === PROJECT 2: RTSC — FULL DETAILED DESCRIPTION === -->
+                <div class="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold text-blue-700 mb-3">RTSC — Train Driver Vigilance Monitoring System</h3>
+
+                        <p class="text-gray-600 mb-4">
+                            A real-time vigilance monitoring system for train drivers using a train simulator, photoplethysmography (PPG), and multimodal data visualization.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">PyQt6</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">FastAPI</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">MNE-LSL</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">OpenCV</span>
+                        </div>
+
+                        <details class="group">
+                            <summary class="flex justify-between items-center cursor-pointer list-none text-blue-600 hover:text-blue-800 font-medium text-sm mb-3">
+                                <span class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                    More about the project
+                                </span>
+                            </summary>
+
+                            <div class="mt-4 pt-4 border-t border-gray-200 text-gray-700 space-y-4 text-sm leading-relaxed">
+                                <p>
+                                    RTSC is a specialized monitoring system designed to assess the vigilance and cognitive state of train drivers during simulated train operation. The subject assumes the role of a train driver using a high-fidelity train simulator, while an observer monitors physiological and behavioral data in real time.
+                                </p>
+
+                                <p>
+                                    The core of the system is a pre-trained classifier that analyzes photoplethysmography (PPG) signals from a wearable sensor to predict the driver’s vigilance level. Classification is performed on a dedicated FastAPI server, which communicates with the main GUI via HTTP, ensuring low-latency, reliable inference.
+                                </p>
+
+                                <div class="space-y-3">
+                                    <p class="font-medium text-gray-800">Observer Interface Features:</p>
+                                    <ul class="list-disc list-inside space-y-1 ml-4">
+                                        <li>Live PPG waveform visualization with signal quality indicators</li>
+                                        <li>Video feed from driver-facing camera</li>
+                                        <li>Audio stream from simulator cabin</li>
+                                        <li>Animated vigilance state indicator (color-coded: green/yellow/red)</li>
+                                        <li>Real-time classification confidence score</li>
+                                        <li>Event logging and timeline navigation</li>
+                                        <li>Session recording controls (start/stop)</li>
+                                        <li>Configurable alert thresholds</li>
+                                    </ul>
+                                </div>
+
+                                <p>
+                                    The system supports data synchronization via LSL, allowing integration with LabRecorder for offline analysis. All components — GUI, classifier, and media servers — are containerized and deployable in isolated environments.
+                                </p>
+
+                                <div class="space-y-3">
+                                    <p class="font-medium text-gray-800">Technical Architecture:</p>
+                                    <ul class="list-disc list-inside space-y-1 ml-4">
+                                        <li>GUI: PyQt6 with pyqtgraph for real-time plotting</li>
+                                        <li>Classifier Server: FastAPI with scikit-learn / TensorFlow model</li>
+                                        <li>Media Server: FastAPI + OpenCV + PyAudio for video/audio streaming</li>
+                                        <li>Data Pipeline: LSL → MNE-LSL → LabRecorder</li>
+                                        <li>Deployment: start.cmd, conda/Python 3.9+, VideoServer.exe</li>
+                                        <li>Configuration: JSON config files, baseline .npz files</li>
+                                        <li>Recording: Automatic data save to data/ folder</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Screenshot -->
+                                <!-- <div class="grid grid-cols-1 gap-3 mt-4">
+                                    <a href="https://github.com/user-attachments/assets/5b500006-5a9c-499a-b2ff-65dedddd9077" target="_blank">
+                                        <img src="https://github.com/user-attachments/assets/5b500006-5a9c-499a-b2ff-65dedddd9077" alt="RTSC Observer Interface" class="rounded-lg border hover:border-blue-400 transition-all w-full h-auto">
+                                    </a>
+                                </div> -->
+
+                                <!-- Links -->
+                                <div class="flex flex-wrap gap-3 text-sm mt-4">
+                                    <a href="https://github.com/AvedikEkiz/RTSC" target="_blank" class="text-blue-600 hover:underline flex items-center">
+                                        <i class="fab fa-github mr-1"></i> GitHub (AvedikEkiz/RTSC)
+                                    </a>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- === PROJECT 3: Learning to Speak — FULL DETAILED DESCRIPTION === -->
+                <div class="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold text-blue-700 mb-3">Learning to Speak — Speech Therapy App</h3>
+
+                        <p class="text-gray-600 mb-4">
+                            Android app for children with speech delay. Includes interactive games with speech-to-text and animated feedback.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Flutter</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Dart</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Speech-to-Text</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Android</span>
+                        </div>
+
+                        <details class="group">
+                            <summary class="flex justify-between items-center cursor-pointer list-none text-blue-600 hover:text-blue-800 font-medium text-sm mb-3">
+                                <span class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                    More about the project
+                                </span>
+                            </summary>
+
+                            <div class="mt-4 pt-4 border-t border-gray-200 text-gray-700 space-y-4 text-sm leading-relaxed">
+                                <p>
+                                    Learning to Speak is a mobile application designed to support speech development in children with speech delays. It features three interactive games that combine animation, voice prompts, and real-time speech recognition to encourage articulation and motor control.
+                                </p>
+
+                                <div class="space-y-4">
+                                    <div>
+                                        <p class="font-medium text-gray-800 mb-1">Game 1: Feed the Animals</p>
+                                        <ul class="list-disc list-inside space-y-1 ml-4">
+                                            <li>Animated animal appears on screen with expressive eyes and mouth</li>
+                                            <li>Voice prompt: "Say 'meow' to feed the cat"</li>
+                                            <li>Speech-to-text model analyzes child's pronunciation in real time</li>
+                                            <li>Correct sound → animal eats, cheers, and shows happiness</li>
+                                            <li>Incorrect → gentle prompt to try again with visual cue</li>
+                                            <li>Currently supports 10 animals: cat, dog, cow, sheep, horse, pig, duck, chicken, lion, elephant</li>
+                                            <li>Each animal has unique sound, animation, and food item</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <p class="font-medium text-gray-800 mb-1">Game 2: Funny Faces Workout</p>
+                                        <ul class="list-disc list-inside space-y-1 ml-4">
+                                            <li>Animated female character demonstrates facial exercises</li>
+                                            <li>Prompts include: "Stick out your tongue", "Purse your lips", "Kiss", "Look surprised", "Smile wide"</li>
+                                            <li>Child imitates in front of front camera</li>
+                                            <li>Visual feedback with stars, sounds, and character applause</li>
+                                            <li>Progress bar fills with each successful repetition</li>
+                                            <li>Focus on articulatory gymnastics and oral motor skills</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <p class="font-medium text-gray-800 mb-1">Game 3: Copy the Pose</p>
+                                        <ul class="list-disc list-inside space-y-1 ml-4">
+                                            <li>Animated character strikes a full-body pose (arms up, jump, etc.)</li>
+                                            <li>Child must repeat the body position</li>
+                                            <li>Camera-based pose detection (planned for future update)</li>
+                                            <li>Progress tracking per session with stars and rewards</li>
+                                            <li>Encourages gross motor imitation alongside speech</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Built with Flutter for cross-platform compatibility with primary focus on Android. Uses Google Speech-to-Text API for real-time sound analysis. Includes progress tracking, parental reports, customizable difficulty levels, and child-friendly UI with large buttons and bright colors.
+                                </p>
+
+                                <!-- Screenshots -->
+                                <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+                                    <a href="https://via.placeholder.com/400x800.png?text=Feed+the+Cat" target="_blank">
+                                        <img src="https://via.placeholder.com/400x800.png?text=Feed+the+Cat" alt="Feed the Animals" class="rounded-lg border hover:border-blue-400 transition-all w-full h-auto">
+                                    </a>
+                                    <a href="https://via.placeholder.com/400x800.png?text=Funny+Faces" target="_blank">
+                                        <img src="https://via.placeholder.com/400x800.png?text=Funny+Faces" alt="Funny Faces" class="rounded-lg border hover:border-blue-400 transition-all w-full h-auto">
+                                    </a>
+                                </div> -->
+
+                                <!-- Links -->
+                                <div class="flex flex-wrap gap-3 text-sm mt-4">
+                                    <a href="#" target="_blank" class="text-green-600 hover:underline flex items-center">
+                                        <i class="fab fa-google-play mr-1"></i> Google Play (coming soon)
+                                    </a>
+                                    <a href="#" target="_blank" class="text-blue-600 hover:underline flex items-center">
+                                        <i class="fab fa-github mr-1"></i> GitHub (private)
+                                    </a>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
         <!-- Publications & Patents Section -->
         <section class="mb-10">
