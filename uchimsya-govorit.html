@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Учимся говорить</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+      color: #222;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin-bottom: 16px;
+    }
+
+    .menu-row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+
+    .menu-row img {
+      width: 180px;
+      border-radius: 12px;
+      border: 1px solid #e8e8e8;
+      display: block;
+    }
+
+    .landscape-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .landscape-grid img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #e8e8e8;
+      display: block;
+    }
+
+    .caption {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 540px) {
+      .landscape-grid { grid-template-columns: 1fr; }
+      .menu-row img { width: 130px; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Учимся говорить</h1>
+  <p class="description">
+    Мобильное приложение для детей с задержкой речевого развития. Появляется мультяшное животное, диктор просит произнести его звук — приложение распознаёт речь и переходит к следующему. Всего 10 животных.
+  </p>
+
+  <h2>Меню</h2>
+  <div class="menu-row">
+    <div>
+      <img src="screenshots/Screenshot_20260305-204445.png" alt="Главное меню">
+      <div class="caption">Главное меню</div>
+    </div>
+  </div>
+
+  <h2>Игра</h2>
+  <div class="landscape-grid">
+    <div>
+      <img src="screenshots/Screenshot_20260305-204454.png" alt="Корова">
+      <div class="caption">Корова</div>
+    </div>
+    <div>
+      <img src="screenshots/Screenshot_20260305-204507.png" alt="Ослик">
+      <div class="caption">Ослик</div>
+    </div>
+    <div>
+      <img src="screenshots/Screenshot_20260305-204522.png" alt="Цыплёнок">
+      <div class="caption">Цыплёнок — речь распознана</div>
+    </div>
+    <div>
+      <img src="screenshots/Screenshot_20260305-210215.png" alt="Барашек">
+      <div class="caption">Барашек — подсказка звука</div>
+    </div>
+    <div>
+      <img src="screenshots/Screenshot_20260305-210230.png" alt="Собака">
+      <div class="caption">Собака — речь распознана</div>
+    </div>
+    <div>
+      <img src="screenshots/Screenshot_20260305-210316.png" alt="Мышка">
+      <div class="caption">Мышка — речь распознана</div>
+    </div>
+    <div>
+      <img src="screenshots/Screenshot_20260305-210325.png" alt="Свинка">
+      <div class="caption">Свинка</div>
+    </div>
+    <div>
+      <img src="screenshots/Screenshot_20260305-210351.png" alt="Хомяк">
+      <div class="caption">Хомяк — подсказка звука</div>
+    </div>
+    <div>
+      <img src="screenshots/Screenshot_20260305-210406.png" alt="Козлик">
+      <div class="caption">Козлик — подсказка звука</div>
+    </div>
+  </div>
+
+</body>
+</html>
