@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTSC — система мониторинга состояния</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+      color: #222;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      max-width: 680px;
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin: 40px 0 16px;
+    }
+
+    .grid-full {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .grid-small {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e8e8e8;
+      display: block;
+    }
+
+    .caption {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .grid-full, .grid-small { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>RTSC</h1>
+  <p class="description">
+    Программный комплекс для мониторинга функционального состояния оператора в реальном времени. Принимает физиологические сигналы — ЭКГ, КГР, ЭМГ, ФП, ЭЭГ — через LSL-протокол, отображает их в реальном времени, подключает видео- и аудиопоток, и применяет ML-классификатор для оценки текущего состояния.
+  </p>
+
+  <h2>Интерфейс</h2>
+  <div class="grid-full">
+    <div class="item">
+      <img src="screenshots/rtsc/image2.png" alt="Главное окно">
+      <div class="caption">Главное окно приложения</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image4.png" alt="Сигналы">
+      <div class="caption">Мониторинг физиологических сигналов</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image7.png" alt="Видеопоток">
+      <div class="caption">Подключённый видеопоток</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image8.png" alt="Аудиоклиент">
+      <div class="caption">Аудиоклиент</div>
+    </div>
+  </div>
+
+  <h2>Просмотр ЭЭГ</h2>
+  <div class="grid-full">
+    <div class="item">
+      <img src="screenshots/rtsc/image5.png" alt="ЭЭГ-вьюер">
+      <div class="caption">Многоканальный просмотр ЭЭГ</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image11.png" alt="Запись">
+      <div class="caption">Запись данных в LabRecorder</div>
+    </div>
+  </div>
+
+  <h2>Диалоги и утилиты</h2>
+  <div class="grid-small">
+    <div class="item">
+      <img src="screenshots/rtsc/image3.png" alt="LSL-потоки">
+      <div class="caption">Выбор LSL-потоков</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image9.png" alt="Выбор потока PPG">
+      <div class="caption">Выбор потока для анализа</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image12.png" alt="Classifier Manager">
+      <div class="caption">Менеджер классификатора</div>
+    </div>
+  </div>
+
+</body>
+</html>
