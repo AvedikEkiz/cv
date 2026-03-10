@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UII — Система управления испытаниями</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+      color: #222;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #888;
+      background: #f0f0f0;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-bottom: 16px;
+      letter-spacing: 0.04em;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      max-width: 680px;
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin: 40px 0 16px;
+    }
+
+    .grid-full {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .grid-small {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e8e8e8;
+      display: block;
+    }
+
+    .placeholder {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      border-radius: 8px;
+      border: 1.5px dashed #d0d0d0;
+      background: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #bbb;
+      font-size: 0.8rem;
+    }
+
+    .caption {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .grid-full, .grid-small { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>UII — Система управления испытаниями</h1>
+  <span class="badge">in progress</span>
+  <p class="description">
+    Платформа реального времени для управления нейрофизиологическими экспериментами. Поддерживает два сценария: монотонная деятельность (рабочие места специалиста и командира, ЭЭГ/ЭКГ/КГР через LSL, прогноз надёжности в реальном времени) и высокие физические нагрузки (пассивный мониторинг ЭКГ с беспроводной передачей до 1 км). Включает цифровой профиль специалиста, генерацию HTML/PDF-отчётов и адаптивный интерфейс.
+  </p>
+
+  <h2>Сценарий 1 — Монотонная деятельность</h2>
+  <div class="grid-full">
+    <div class="item">
+      <div class="placeholder">скриншот появится позже</div>
+      <div class="caption">Рабочее место командира</div>
+    </div>
+    <div class="item">
+      <div class="placeholder">скриншот появится позже</div>
+      <div class="caption">Рабочее место специалиста</div>
+    </div>
+    <div class="item">
+      <div class="placeholder">скриншот появится позже</div>
+      <div class="caption">Мониторинг физиологических сигналов</div>
+    </div>
+    <div class="item">
+      <div class="placeholder">скриншот появится позже</div>
+      <div class="caption">Прогноз профессиональной надёжности</div>
+    </div>
+  </div>
+
+  <h2>Сценарий 2 — Высокие физические нагрузки</h2>
+  <div class="grid-full">
+    <div class="item">
+      <div class="placeholder">скриншот появится позже</div>
+      <div class="caption">Пункт управления командира</div>
+    </div>
+    <div class="item">
+      <div class="placeholder">скриншот появится позже</div>
+      <div class="caption">Визуализация ЭКГ в реальном времени</div>
+    </div>
+  </div>
+
+  <h2>Профиль и утилиты</h2>
+  <div class="grid-small">
+    <div class="item">
+      <div class="placeholder">скриншот появится позже</div>
+      <div class="caption">Создание профиля специалиста</div>
+    </div>
+    <div class="item">
+      <div class="placeholder">скриншот появится позже</div>
+      <div class="caption">Генерация HTML/PDF-отчёта</div>
+    </div>
+    <div class="item">
+      <div class="placeholder">скриншот появится позже</div>
+      <div class="caption">Панель администратора</div>
+    </div>
+  </div>
+
+</body>
+</html>
