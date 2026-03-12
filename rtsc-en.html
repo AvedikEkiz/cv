@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operator State Monitoring System</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+      color: #222;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      max-width: 680px;
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin: 40px 0 16px;
+    }
+
+    .grid-full {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .grid-small {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e8e8e8;
+      display: block;
+    }
+
+    .caption {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .grid-full, .grid-small { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Operator State Monitoring System</h1>
+  <p class="description">
+    A software complex for real-time monitoring of an operator's functional state. Receives physiological signals — ECG, GSR, EMG, PPG, EEG — via the LSL protocol, displays them in real time, connects video and audio streams, and applies an ML classifier to assess the current state.
+  </p>
+
+  <h2>Interface</h2>
+  <div class="grid-full">
+    <div class="item">
+      <img src="screenshots/rtsc/image2.png" alt="Main window">
+      <div class="caption">Main application window</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image4.png" alt="Signals">
+      <div class="caption">Physiological signal monitoring</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image7.png" alt="Video stream">
+      <div class="caption">Connected video stream</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image8.png" alt="Audio client">
+      <div class="caption">Audio client</div>
+    </div>
+  </div>
+
+  <h2>EEG Viewer</h2>
+  <div class="grid-full">
+    <div class="item">
+      <img src="screenshots/rtsc/image5.png" alt="EEG viewer">
+      <div class="caption">Multi-channel EEG viewer</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image11.png" alt="Recording">
+      <div class="caption">Data recording in LabRecorder</div>
+    </div>
+  </div>
+
+  <h2>Dialogs & Utilities</h2>
+  <div class="grid-small">
+    <div class="item">
+      <img src="screenshots/rtsc/image3.png" alt="LSL streams">
+      <div class="caption">LSL stream selection</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image9.png" alt="PPG stream selection">
+      <div class="caption">Stream selection for analysis</div>
+    </div>
+    <div class="item">
+      <img src="screenshots/rtsc/image12.png" alt="Classifier Manager">
+      <div class="caption">Classifier manager</div>
+    </div>
+  </div>
+
+</body>
+</html>

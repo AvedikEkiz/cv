@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Learn to Talk</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+      color: #222;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin-bottom: 16px;
+    }
+
+    .menu-row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+
+    .menu-row img {
+      width: 180px;
+      border-radius: 12px;
+      border: 1px solid #e8e8e8;
+      display: block;
+    }
+
+    .landscape-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .landscape-grid img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #e8e8e8;
+      display: block;
+    }
+
+    .caption {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 540px) {
+      .landscape-grid { grid-template-columns: 1fr; }
+      .menu-row img { width: 130px; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Let's Learn to Talk</h1>
+  <p class="description">
+    A mobile app for children with speech development delays. A cartoon animal appears, a narrator asks the child to make its sound — the app recognises the speech and moves to the next animal. 10 animals in total.
+  </p>
+
+  <h2>Menu</h2>
+  <div class="menu-row">
+    <div>
+      <img src="screenshots/uchimsya-govorit/Screenshot_20260305-204445.png" alt="Main menu">
+      <div class="caption">Main menu</div>
+    </div>
+  </div>
+
+  <h2>Gameplay</h2>
+  <div class="landscape-grid">
+    <div>
+      <img src="screenshots/uchimsya-govorit/Screenshot_20260305-204454.png" alt="Cow">
+      <div class="caption">Cow</div>
+    </div>
+    <div>
+      <img src="screenshots/uchimsya-govorit/Screenshot_20260305-204507.png" alt="Donkey">
+      <div class="caption">Donkey</div>
+    </div>
+    <div>
+      <img src="screenshots/uchimsya-govorit/Screenshot_20260305-204522.png" alt="Chick">
+      <div class="caption">Chick — speech recognised</div>
+    </div>
+    <div>
+      <img src="screenshots/uchimsya-govorit/Screenshot_20260305-210215.png" alt="Lamb">
+      <div class="caption">Lamb — sound hint</div>
+    </div>
+    <div>
+      <img src="screenshots/uchimsya-govorit/Screenshot_20260305-210230.png" alt="Dog">
+      <div class="caption">Dog — speech recognised</div>
+    </div>
+    <div>
+      <img src="screenshots/uchimsya-govorit/Screenshot_20260305-210316.png" alt="Mouse">
+      <div class="caption">Mouse — speech recognised</div>
+    </div>
+    <div>
+      <img src="screenshots/uchimsya-govorit/Screenshot_20260305-210325.png" alt="Pig">
+      <div class="caption">Pig</div>
+    </div>
+    <div>
+      <img src="screenshots/uchimsya-govorit/Screenshot_20260305-210351.png" alt="Hamster">
+      <div class="caption">Hamster — sound hint</div>
+    </div>
+    <div>
+      <img src="screenshots/uchimsya-govorit/Screenshot_20260305-210406.png" alt="Goat">
+      <div class="caption">Goat — sound hint</div>
+    </div>
+  </div>
+
+</body>
+</html>
